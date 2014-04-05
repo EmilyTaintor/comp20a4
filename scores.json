@@ -1,0 +1,16 @@
+//scores.json
+[
+{
+	"username": ,
+	"score": ,
+	"created_at": ,
+	"grid": {
+		"size": ,
+		"cells": {
+			"X":0,
+			"Y":0,
+			"value": ,
+		}
+	},
+}
+]
