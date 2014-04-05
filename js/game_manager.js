@@ -188,11 +188,17 @@ GameManager.prototype.move = function (direction) {
 
     if (!this.movesAvailable()) {
       this.over = true; // Game over!
+      //THIS IS WHERE WE NEED TO CALL THE STORE FUNCTION!!!!!
+      prompt("Please input your username to store your score: ","Your username here");
     }
 
     this.actuate();
   }
 };
+
+GameManager.prototype.addScore = function (score) {
+  //adding the current score to the high score JSON file
+}
 
 // Get the vector representing the chosen direction
 GameManager.prototype.getVector = function (direction) {

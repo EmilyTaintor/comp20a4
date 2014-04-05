@@ -9,8 +9,28 @@
 		"cells": {
 			"X":0,
 			"Y":0,
-			"value": ,
+			"value": 
 		}
 	},
 }
 ]
+
+/*
+scores.push(
+{
+	var currentDate = new Date();
+    var datetime = currentDate.getMonth()+1 + "/" + currentDate.getDate() + "/" + currentDate.getFullYear() + " " + currentDate.getHours() + ":" + currentDate.getMinutes() + " - ";
+	username:"etaint01",
+	score:"13111",
+	created_at: datetime,
+	grid:
+		{
+			size:"4",
+			cells: {
+						X: "0",
+						Y: "0",
+						value: "2"
+			}
+		}
+	})
+	*/
