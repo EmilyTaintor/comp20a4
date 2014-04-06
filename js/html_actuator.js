@@ -30,6 +30,8 @@ HTMLActuator.prototype.actuate = function (grid, metadata) {
       } else if (metadata.won) {
         self.message(true); // You win!
       }
+        prompt("Please input your username to store your score: ","");
+
     }
 
   });

@@ -54,6 +54,7 @@ GameManager.prototype.setup = function () {
     this.won         = false;
     this.keepPlaying = false;
 
+    this.askForUsername();
     // Add the initial tiles
     this.addStartTiles();
   }
@@ -67,6 +68,13 @@ GameManager.prototype.addStartTiles = function () {
   for (var i = 0; i < this.startTiles; i++) {
     this.addRandomTile();
   }
+};
+
+GameManager.prototype.askForUsername = function()
+{
+  var username = prompt("Please enter username here:");
+  //alert("Your name is: " + username);
+  this.username = username;
 };
 
 // Adds a tile in a random position
@@ -189,7 +197,6 @@ GameManager.prototype.move = function (direction) {
     if (!this.movesAvailable()) {
       this.over = true; // Game over!
       //THIS IS WHERE WE NEED TO CALL THE STORE FUNCTION!!!!!
-      prompt("Please input your username to store your score: ","Your username here");
     }
 
     this.actuate();
